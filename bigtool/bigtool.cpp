@@ -240,10 +240,22 @@ int main(int argc, char* argv[])
 						continue;
 					}
 
-					std::string src = path;
-					src += "\\";
-					src += file;
+					std::string src;
 
+					std::string::size_type pos = file.find(path);
+
+					if (pos == std::string::npos)
+					{
+						src = path;
+						src += "\\";
+						src += file;
+					}
+					else
+					{
+						src = file;
+						file.erase(pos, strlen(path) + 1);
+					}
+					
 					if (std::filesystem::path(file).extension().string() == ".cdata" || std::filesystem::path(file).extension().string() == ".vp6" || std::filesystem::path(file).extension().string() == ".snd" || std::filesystem::path(file).extension().string() == ".imp")
 					{
 						writer.Add_File(src.c_str(), file.c_str(), false);
