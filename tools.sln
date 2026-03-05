@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "refpack", "refpack\refpack.vcxproj", "{AB437BAF-08C9-4B31-8EBD-88560F65449E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bigtool", "bigtool\bigtool.vcxproj", "{A8AD2E2B-4EEC-454C-B8D4-8D437C33B3FB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bigfile", "bigfile\bigfile.vcxproj", "{F9EF1C2F-D84B-4040-946B-F2E1669FBB0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB437BAF-08C9-4B31-8EBD-88560F65449E}.Release|Win32.ActiveCfg = Release|Win32
+		{AB437BAF-08C9-4B31-8EBD-88560F65449E}.Release|Win32.Build.0 = Release|Win32
+		{A8AD2E2B-4EEC-454C-B8D4-8D437C33B3FB}.Release|Win32.ActiveCfg = Release|Win32
+		{A8AD2E2B-4EEC-454C-B8D4-8D437C33B3FB}.Release|Win32.Build.0 = Release|Win32
+		{F9EF1C2F-D84B-4040-946B-F2E1669FBB0D}.Release|Win32.ActiveCfg = Release|Win32
+		{F9EF1C2F-D84B-4040-946B-F2E1669FBB0D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C3976FB-4BE5-49C8-80BF-342E228D2D65}
+	EndGlobalSection
+EndGlobal
