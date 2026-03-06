@@ -92,14 +92,14 @@ void BigReader::Get_File_Data(int index, char *buf)
 	if (entry.compressed)
 	{
 		char* cbuf = new char[entry.size];
-		fseek(handle, entry.offset, SEEK_SET);
+		_fseeki64(handle, entry.offset, SEEK_SET);
 		fread(cbuf, 1, entry.size, handle);
 		REF_decode(buf, cbuf);
 		delete[] cbuf;
 	}
 	else
 	{
-		fseek(handle, entry.offset, SEEK_SET);
+		_fseeki64(handle, entry.offset, SEEK_SET);
 		fread(buf, 1, entry.size, handle);
 	}
 }
