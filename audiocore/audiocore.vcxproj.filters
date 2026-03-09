@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\lame">
+      <UniqueIdentifier>{ee3feb11-0c95-49a7-a4e0-4428e754d31e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\decoders">
+      <UniqueIdentifier>{fb659649-b71e-40ef-946b-58e67eb75698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\encoders">
+      <UniqueIdentifier>{b4e3ca0d-1e07-4ccf-8e86-12f23e1983f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\decoders">
+      <UniqueIdentifier>{32b39258-ece9-4f5f-ac5a-c18d964dea8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lame">
+      <UniqueIdentifier>{d3cc63ca-f53e-4990-8950-1b1ea0cf0f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\encoders">
+      <UniqueIdentifier>{b4559366-2724-4272-95a1-4ea5860808d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\cmn\samplebuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cmn\scalesamples.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cmn\system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\bitstream.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\encoder.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoders\ealayer31\decealayer3.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoders\declayer3.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cmn\decoder.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cmn\decoderextended.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cmn\decoderextendedfactory.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cmn\decoderregistry.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoders\decpcm16big.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoders\decpcm16little.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoders\decxas1.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cmn\encoderextended.cpp">
+      <Filter>Source Files\encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\cmn\encealayer3blockbuilder.cpp">
+      <Filter>Source Files\encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\encealayer31.cpp">
+      <Filter>Source Files\encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\encealayer32.cpp">
+      <Filter>Source Files\encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\enclayer3.cpp">
+      <Filter>Source Files\encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cmn\encoderextendedfactory.cpp">
+      <Filter>Source Files\encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cmn\encoderregistry.cpp">
+      <Filter>Source Files\encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\encpcm16big.cpp">
+      <Filter>Source Files\encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\encxas1.cpp">
+      <Filter>Source Files\encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\fft.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\gain_analysis.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\lame.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\id3tag.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\mp3toea.cpp">
+      <Filter>Source Files\encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoders\ealayer31\ealayer3core.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoders\ealayer31\ealayer32block.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoders\ealayer31\mpeg.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoders\ealayer31\mpeghufftables.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoders\ealayer31\mpegl3base.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoders\ealayer31\mpegpoly_c.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\newmdct.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\presets.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\psymodel.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\quantize.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\quantize_pvt.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\reservoir.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\set_get.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\tables.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\takehiro.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\util.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\vbrquantize.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\VbrTag.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\lame396\version.cpp">
+      <Filter>Source Files\lame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encoders\cmn\layer3shared.cpp">
+      <Filter>Source Files\encoders</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ibase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\linklist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\mpegcommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\samplebuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\cmn\scalesamples.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\bitstream.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\configMS.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="include\decoders\decealayer31.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\decoders\decealayer32.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\decoders\declayer3.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\decoder.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\decoderregistry.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\decoders\decpcm16big.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\decoders\decpcm16little.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\decoders\decxas1.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="source\decoders\ealayer31\ealayer32block.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\cmn\encealayer3blockbuilder.h">
+      <Filter>Header Files\encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoders\encealayer31.h">
+      <Filter>Header Files\encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoders\encealayer32.h">
+      <Filter>Header Files\encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoders\enclayer3.h">
+      <Filter>Header Files\encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoder.h">
+      <Filter>Header Files\encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\encoder.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoderregistry.h">
+      <Filter>Header Files\encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoders\encpcm16big.h">
+      <Filter>Header Files\encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoders\encxas1.h">
+      <Filter>Header Files\encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\fft.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\gain_analysis.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\id3tag.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\lame-analysis.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\lame.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\lame_global_flags.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\cmn\layer3shared.h">
+      <Filter>Header Files\encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\l3side.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\machine.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\mp3toea.h">
+      <Filter>Header Files\encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\newmdct.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\psymodel.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\quantize.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\quantize_pvt.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\reservoir.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\set_get.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\tables.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\util.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\vbrquantize.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\VbrTag.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\encoders\lame396\version.h">
+      <Filter>Header Files\lame</Filter>
+    </ClInclude>
+    <ClInclude Include="include\endian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

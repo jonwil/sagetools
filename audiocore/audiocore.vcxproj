@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{A1950F89-689A-4FC8-9BC9-0797B2352381}</ProjectGuid>
+    <RootNamespace>audiocore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.36915.8</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\audiocore\include;$(SolutionDir)\audiocore\source;$(SolutionDir)\audiocore\source\encoders\lame396;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WIN32_WINNT=0x0600;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4244;4838;26495;6385;6262</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\cmn\decoder.cpp" />
+    <ClCompile Include="source\cmn\decoderextended.cpp" />
+    <ClCompile Include="source\cmn\decoderextendedfactory.cpp" />
+    <ClCompile Include="source\cmn\decoderregistry.cpp" />
+    <ClCompile Include="source\cmn\encoderextended.cpp" />
+    <ClCompile Include="source\cmn\encoderextendedfactory.cpp" />
+    <ClCompile Include="source\cmn\encoderregistry.cpp" />
+    <ClCompile Include="source\cmn\samplebuffer.cpp" />
+    <ClCompile Include="source\cmn\scalesamples.cpp" />
+    <ClCompile Include="source\cmn\system.cpp" />
+    <ClCompile Include="source\decoders\declayer3.cpp" />
+    <ClCompile Include="source\decoders\decpcm16big.cpp" />
+    <ClCompile Include="source\decoders\decpcm16little.cpp" />
+    <ClCompile Include="source\decoders\decxas1.cpp" />
+    <ClCompile Include="source\decoders\ealayer31\decealayer3.cpp" />
+    <ClCompile Include="source\decoders\ealayer31\ealayer32block.cpp" />
+    <ClCompile Include="source\decoders\ealayer31\ealayer3core.cpp" />
+    <ClCompile Include="source\decoders\ealayer31\mpeg.cpp" />
+    <ClCompile Include="source\decoders\ealayer31\mpeghufftables.cpp" />
+    <ClCompile Include="source\decoders\ealayer31\mpegl3base.cpp" />
+    <ClCompile Include="source\decoders\ealayer31\mpegpoly_c.cpp" />
+    <ClCompile Include="source\encoders\cmn\encealayer3blockbuilder.cpp" />
+    <ClCompile Include="source\encoders\cmn\layer3shared.cpp" />
+    <ClCompile Include="source\encoders\encealayer31.cpp" />
+    <ClCompile Include="source\encoders\encealayer32.cpp" />
+    <ClCompile Include="source\encoders\enclayer3.cpp" />
+    <ClCompile Include="source\encoders\encpcm16big.cpp" />
+    <ClCompile Include="source\encoders\encxas1.cpp" />
+    <ClCompile Include="source\encoders\lame396\bitstream.cpp" />
+    <ClCompile Include="source\encoders\lame396\encoder.cpp" />
+    <ClCompile Include="source\encoders\lame396\fft.cpp" />
+    <ClCompile Include="source\encoders\lame396\gain_analysis.cpp" />
+    <ClCompile Include="source\encoders\lame396\id3tag.cpp" />
+    <ClCompile Include="source\encoders\lame396\lame.cpp" />
+    <ClCompile Include="source\encoders\lame396\newmdct.cpp" />
+    <ClCompile Include="source\encoders\lame396\presets.cpp" />
+    <ClCompile Include="source\encoders\lame396\psymodel.cpp" />
+    <ClCompile Include="source\encoders\lame396\quantize.cpp" />
+    <ClCompile Include="source\encoders\lame396\quantize_pvt.cpp" />
+    <ClCompile Include="source\encoders\lame396\reservoir.cpp" />
+    <ClCompile Include="source\encoders\lame396\set_get.cpp" />
+    <ClCompile Include="source\encoders\lame396\tables.cpp" />
+    <ClCompile Include="source\encoders\lame396\takehiro.cpp" />
+    <ClCompile Include="source\encoders\lame396\util.cpp" />
+    <ClCompile Include="source\encoders\lame396\vbrquantize.cpp" />
+    <ClCompile Include="source\encoders\lame396\VbrTag.cpp" />
+    <ClCompile Include="source\encoders\lame396\version.cpp" />
+    <ClCompile Include="source\encoders\mp3toea.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\base.h" />
+    <ClInclude Include="include\decoder.h" />
+    <ClInclude Include="include\decoderregistry.h" />
+    <ClInclude Include="include\decoders\decealayer31.h" />
+    <ClInclude Include="include\decoders\decealayer32.h" />
+    <ClInclude Include="include\decoders\declayer3.h" />
+    <ClInclude Include="include\decoders\decpcm16big.h" />
+    <ClInclude Include="include\decoders\decpcm16little.h" />
+    <ClInclude Include="include\decoders\decxas1.h" />
+    <ClInclude Include="include\encoder.h" />
+    <ClInclude Include="include\encoderregistry.h" />
+    <ClInclude Include="include\encoders\encealayer31.h" />
+    <ClInclude Include="include\encoders\encealayer32.h" />
+    <ClInclude Include="include\encoders\enclayer3.h" />
+    <ClInclude Include="include\encoders\encpcm16big.h" />
+    <ClInclude Include="include\encoders\encxas1.h" />
+    <ClInclude Include="include\endian.h" />
+    <ClInclude Include="include\ibase.h" />
+    <ClInclude Include="include\private\linklist.h" />
+    <ClInclude Include="include\private\mpegcommon.h" />
+    <ClInclude Include="include\samplebuffer.h" />
+    <ClInclude Include="include\system.h" />
+    <ClInclude Include="source\cmn\scalesamples.h" />
+    <ClInclude Include="source\decoders\ealayer31\ealayer32block.h" />
+    <ClInclude Include="source\encoders\cmn\encealayer3blockbuilder.h" />
+    <ClInclude Include="source\encoders\cmn\layer3shared.h" />
+    <ClInclude Include="source\encoders\lame396\bitstream.h" />
+    <ClInclude Include="source\encoders\lame396\configMS.h" />
+    <ClInclude Include="source\encoders\lame396\encoder.h" />
+    <ClInclude Include="source\encoders\lame396\fft.h" />
+    <ClInclude Include="source\encoders\lame396\gain_analysis.h" />
+    <ClInclude Include="source\encoders\lame396\id3tag.h" />
+    <ClInclude Include="source\encoders\lame396\l3side.h" />
+    <ClInclude Include="source\encoders\lame396\lame-analysis.h" />
+    <ClInclude Include="source\encoders\lame396\lame.h" />
+    <ClInclude Include="source\encoders\lame396\lame_global_flags.h" />
+    <ClInclude Include="source\encoders\lame396\machine.h" />
+    <ClInclude Include="source\encoders\lame396\newmdct.h" />
+    <ClInclude Include="source\encoders\lame396\psymodel.h" />
+    <ClInclude Include="source\encoders\lame396\quantize.h" />
+    <ClInclude Include="source\encoders\lame396\quantize_pvt.h" />
+    <ClInclude Include="source\encoders\lame396\reservoir.h" />
+    <ClInclude Include="source\encoders\lame396\set_get.h" />
+    <ClInclude Include="source\encoders\lame396\tables.h" />
+    <ClInclude Include="source\encoders\lame396\util.h" />
+    <ClInclude Include="source\encoders\lame396\vbrquantize.h" />
+    <ClInclude Include="source\encoders\lame396\VbrTag.h" />
+    <ClInclude Include="source\encoders\lame396\version.h" />
+    <ClInclude Include="source\encoders\mp3toea.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{106AAB95-9DF1-4DD4-BFA9-C34B9AD78A74}</ProjectGuid>
+    <RootNamespace>simex</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.36915.8</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\simex\include;$(SolutionDir)\simex\source;$(SolutionDir)\simex\source\extern;$(SolutionDir)\audiocore\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WIN32_WINNT=0x0600;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\cmn\cfftfloat.cpp" />
+    <ClCompile Include="source\cmn\encoderhelper.cpp" />
+    <ClCompile Include="source\cmn\fileio.cpp" />
+    <ClCompile Include="source\cmn\sbnkutil.cpp" />
+    <ClCompile Include="source\cmn\scompbrr.cpp" />
+    <ClCompile Include="source\cmn\scompmpg.cpp" />
+    <ClCompile Include="source\cmn\serr.cpp" />
+    <ClCompile Include="source\cmn\sfile.cpp" />
+    <ClCompile Include="source\cmn\sfiltapi.cpp" />
+    <ClCompile Include="source\cmn\smpeg.cpp" />
+    <ClCompile Include="source\cmn\sndplayer.cpp" />
+    <ClCompile Include="source\cmn\sresamp.cpp" />
+    <ClCompile Include="source\cmn\ssamples.cpp" />
+    <ClCompile Include="source\cmn\sstrmsnd.cpp" />
+    <ClCompile Include="source\cmn\sstrmutil.cpp" />
+    <ClCompile Include="source\cmn\sutil.cpp" />
+    <ClCompile Include="source\cmn\swave.cpp" />
+    <ClCompile Include="source\extern\coda\cmn\coda.cpp" />
+    <ClCompile Include="source\extern\coda\cmn\eaxadec16.cpp" />
+    <ClCompile Include="source\extern\coda\cmn\sig24idecs16.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\simex\simex.h" />
+    <ClInclude Include="source\cmn\cfftfloat.h" />
+    <ClInclude Include="source\cmn\encoderhelper.h" />
+    <ClInclude Include="source\cmn\fileio.h" />
+    <ClInclude Include="source\cmn\isimex.h" />
+    <ClInclude Include="source\cmn\mp3toea.h" />
+    <ClInclude Include="source\cmn\putbits.h" />
+    <ClInclude Include="source\cmn\sbnkutil.h" />
+    <ClInclude Include="source\cmn\sstrmutil.h" />
+    <ClInclude Include="source\extern\bitgetter.h" />
+    <ClInclude Include="source\extern\coda\extern\ftoi.h" />
+    <ClInclude Include="source\extern\coda\include\coda.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
