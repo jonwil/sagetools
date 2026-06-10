@@ -151,23 +151,6 @@ bool HasAlphaChannel(D3DFORMAT format)
 	return false;
 }
 
-HRESULT WINAPI XGCopySurfaceX(
-	VOID* pDestination,  // Base address of the destination image
-	INT              DstRowPitch,   // Distance in bytes between one row of the destination image and the next
-	UINT             Width,         // Width of the destination image in texels
-	UINT             Height,        // Height of the destination image in texels
-	D3DFORMAT        DstFormat,     // Format of the destination image
-	CONST POINT* pPoint,        // Offset in the destination image to place the copied rectangle
-	CONST VOID* pSource,       // Base address of the source image
-	INT              SrcRowPitch,   // Distance in bytes between one row of the source image and the next
-	D3DFORMAT        SrcFormat,     // Format of the source image
-	CONST RECT* pRect,         // Rectangle within the source image to copy
-	DWORD            Flags,         // Conversion flags
-	FLOAT            Threshold)    // Threshold for 1 bit components
-{
-	return XGCopySurface(pDestination, DstRowPitch, Width, Height, DstFormat, pPoint, pSource, SrcRowPitch, SrcFormat, pRect, Flags, Threshold);
-}
-
 void LoadImage(RGBAImage& image, bool& alpha, char const* const path)
 {
 	LPDIRECT3DTEXTURE9 texture;
@@ -184,7 +167,7 @@ void LoadImage(RGBAImage& image, bool& alpha, char const* const path)
 	texture->LockRect(0, &rect, nullptr, 0);
 	image.resize(desc.Width, desc.Height);
 
-	if (FAILED(XGCopySurfaceX(image.pixels(), sizeof(rgba_t) * desc.Width, desc.Width, desc.Height, (D3DFORMAT)MAKELEFMT(D3DFMT_LIN_A8B8G8R8), nullptr, rect.pBits, rect.Pitch, (D3DFORMAT)MAKELEFMT(desc.Format), nullptr, XGCOMPRESS_ALPHADIVIDE | XGCOMPRESS_NO_DITHERING, 0.0f)))
+	if (FAILED(XGCopySurface(image.pixels(), sizeof(rgba_t) * desc.Width, desc.Width, desc.Height, (D3DFORMAT)MAKELEFMT(D3DFMT_LIN_A8B8G8R8), nullptr, rect.pBits, rect.Pitch, (D3DFORMAT)MAKELEFMT(desc.Format), nullptr, XGCOMPRESS_ALPHADIVIDE | XGCOMPRESS_NO_DITHERING, 0.0f)))
 	{
 		// error handling not implemented
 	}
@@ -295,7 +278,7 @@ void CreateVolumeRGBAImage(RGBAMipMappedVolumeMap& dst, RGBAImage& src)
 	for (size_t i = 0; i < d; i++)
 	{
 		size_t offset = w * i;
-		RGBAImage& layer = vol[d];
+		RGBAImage& layer = vol[i];
 		
 		for (size_t x = 0; x < w; x++)
 		{
